@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Altrio ondersteunt huisartsenpraktijken met verpleegkundige zorg, praktijkorganisatie en proactieve zorgpaden.">
   <title>Altrio — Partner in Praktijkontwikkeling</title>
 
@@ -36,17 +36,12 @@
 </head>
 <body class="bg-altrio-light text-altrio-dark antialiased">
 
-  <!-- Header -->
   <header class="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
       <a href="#visie" class="flex items-center gap-3" aria-label="Naar startpagina">
         <span class="w-10 h-10 bg-altrio-navy rounded-lg flex items-center justify-center text-white font-extrabold text-xl">A</span>
-        <span>
-          <span class="block text-xl font-extrabold tracking-tight text-altrio-navy">altrio</span>
-          <span class="block -mt-1 text-[10px] uppercase tracking-widest text-altrio-orange font-bold">praktijkontwikkeling</span>
-        </span>
+        <span><span class="block text-xl font-extrabold tracking-tight text-altrio-navy">altrio</span><span class="block -mt-1 text-[10px] uppercase tracking-widest text-altrio-orange font-bold">praktijkontwikkeling</span></span>
       </a>
-
       <nav class="hidden xl:flex items-center gap-6 text-sm font-semibold text-altrio-navy" aria-label="Hoofdnavigatie">
         <a href="#visie" class="hover:text-altrio-orange transition">Onze belofte</a>
         <a href="#menukaart" class="hover:text-altrio-orange transition">Menukaart</a>
@@ -55,92 +50,142 @@
         <a href="#premieoverzicht" class="hover:text-altrio-orange transition">Premies</a>
         <a href="#calculator" class="hover:text-altrio-orange transition">Simulator</a>
       </nav>
-
-      <a href="#calculator" class="shrink-0 bg-altrio-orange text-white px-4 sm:px-6 py-2.5 rounded-full text-sm font-bold shadow-md hover:bg-orange-700 hover:shadow-lg transition">
-        Bereken uw voordeel
-      </a>
+      <a href="#calculator" class="shrink-0 bg-altrio-orange text-white px-4 sm:px-6 py-2.5 rounded-full text-sm font-bold shadow-md hover:bg-orange-700 hover:shadow-lg transition">Bereken uw voordeel</a>
     </div>
   </header>
 
   <main>
-    <!-- Hero -->
     <section id="visie" class="relative overflow-hidden bg-altrio-navy text-white py-16 lg:py-20">
       <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-altrio-blue/20 via-transparent to-transparent"></div>
       <div class="relative z-10 max-w-5xl mx-auto px-4 text-center space-y-7">
         <span class="inline-block bg-altrio-orange px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">Onze belofte</span>
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-          Wij creëren <span class="text-altrio-blue">rust en ruimte</span> in uw huisartsenpraktijk
-        </h1>
-        <p class="max-w-3xl mx-auto text-lg text-slate-300 leading-relaxed">
-          Door preventieve en chronische zorgtrajecten structureel over te dragen aan de verpleegkundigen van Altrio, ontzorgen wij uw praktijk op een veilige, multidisciplinaire en financieel gezonde manier.
-        </p>
-        <div class="flex flex-col sm:flex-row justify-center gap-3">
-          <a href="#menukaart" class="bg-altrio-orange text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-orange-700 transition"><i class="fa-solid fa-list-check mr-2"></i>Bekijk de menukaart</a>
-          <a href="#piloot" class="border border-white/30 text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-white/10 transition"><i class="fa-solid fa-rocket mr-2"></i>Start met een piloot</a>
-        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">Wij creëren <span class="text-altrio-blue">rust en ruimte</span> in uw huisartsenpraktijk</h1>
+        <p class="max-w-3xl mx-auto text-lg text-slate-300 leading-relaxed">Door preventieve en chronische zorgtrajecten structureel over te dragen aan de verpleegkundigen van Altrio, ontzorgen wij uw praktijk op een veilige, multidisciplinaire en financieel gezonde manier.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-3"><a href="#menukaart" class="bg-altrio-orange text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-orange-700 transition"><i class="fa-solid fa-list-check mr-2"></i>Bekijk de menukaart</a><a href="#piloot" class="border border-white/30 text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-white/10 transition"><i class="fa-solid fa-rocket mr-2"></i>Start met een piloot</a></div>
       </div>
     </section>
 
-    <!-- Menukaart -->
     <section id="menukaart" class="py-16 bg-white">
       <div class="max-w-6xl mx-auto px-4">
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <span class="inline-block bg-altrio-navy text-white text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-3">Dienstenaanbod</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-altrio-navy">De Altrio-menukaart</h2>
-          <p class="text-altrio-muted mt-3 leading-relaxed">Start klein met één concrete ondersteuning, of combineer diensten tot een geïntegreerde praktijkwerking. Altrio werkt in de praktijk, bij de patiënt thuis en op afstand.</p>
-        </div>
-
+        <div class="text-center max-w-3xl mx-auto mb-12"><span class="inline-block bg-altrio-navy text-white text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-3">Dienstenaanbod</span><h2 class="text-3xl sm:text-4xl font-extrabold text-altrio-navy">De Altrio-menukaart</h2><p class="text-altrio-muted mt-3 leading-relaxed">Start klein met één concrete ondersteuning, of combineer diensten tot een geïntegreerde praktijkwerking. Altrio werkt in de praktijk, bij de patiënt thuis en op afstand.</p></div>
         <div class="grid lg:grid-cols-3 gap-8">
-          <article class="bg-white p-7 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
-            <div class="w-12 h-12 bg-orange-100 text-altrio-orange rounded-2xl flex items-center justify-center"><i class="fa-solid fa-stethoscope text-xl"></i></div>
-            <h3 class="mt-5 text-xl font-extrabold text-altrio-navy">In de praktijk</h3>
-            <p class="mt-3 text-sm text-altrio-muted leading-relaxed">Verpleegkundige zorg en organisatorische ondersteuning binnen de muren van uw huisartsenpraktijk.</p>
-            <ul class="mt-5 space-y-3 text-sm text-altrio-muted leading-relaxed">
-              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Diabeteseducatie, leefstijladvies en zelfmanagement</li>
-              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Psychosociale screening bij zwangere vrouwen</li>
-              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Geplande bloed- en staalafnames</li>
-              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>ECG, spirometrie, parameters, vaccinaties en kleine verpleegkundige handelingen</li>
-              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Wondzorg, onthaal, basistriage, agendabeheer en EMD/Sumehr-ondersteuning</li>
-            </ul>
-          </article>
-
-          <article class="relative bg-white p-7 rounded-3xl border-2 border-altrio-orange shadow-xl">
-            <span class="absolute -top-3.5 right-6 bg-altrio-orange text-white text-[9px] font-bold uppercase px-3 py-1 rounded-full tracking-widest">Zorg dichtbij</span>
-            <div class="w-12 h-12 bg-orange-100 text-altrio-orange rounded-2xl flex items-center justify-center"><i class="fa-solid fa-house-medical text-xl"></i></div>
-            <h3 class="mt-5 text-xl font-extrabold text-altrio-navy">Bij de patiënt thuis</h3>
-            <p class="mt-3 text-sm text-altrio-muted leading-relaxed">Outreachende zorg wanneer die beter aansluit bij de patiënt en het gekozen zorgpad.</p>
-            <ul class="mt-5 space-y-3 text-sm text-altrio-muted leading-relaxed">
-              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Diabeteseducatie en psychosociale screening thuis</li>
-              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Mobiele bloedafnames in directe opdracht van de arts</li>
-              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Gespecialiseerde opvolging van complexe wonden</li>
-              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Totale parenterale nutritie en hoogtechnologische thuiszorg</li>
-              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Geriatrische assessments, advance care planning en casemanagement</li>
-            </ul>
-          </article>
-
-          <article class="bg-white p-7 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
-            <div class="w-12 h-12 bg-blue-100 text-altrio-navy rounded-2xl flex items-center justify-center"><i class="fa-solid fa-laptop-medical text-xl"></i></div>
-            <h3 class="mt-5 text-xl font-extrabold text-altrio-navy">Op afstand &amp; proactief</h3>
-            <p class="mt-3 text-sm text-altrio-muted leading-relaxed">Structurele opvolging om zorgpaden te bewaken en risicopatiënten tijdig in beeld te krijgen.</p>
-            <ul class="mt-5 space-y-3 text-sm text-altrio-muted leading-relaxed">
-              <li><i class="fa-solid fa-check text-altrio-blue mr-2"></i>Veilige triage op afstand en agendabeheer</li>
-              <li><i class="fa-solid fa-check text-altrio-blue mr-2"></i>Eventuele ondersteuning met AI-triagesoftware</li>
-              <li><i class="fa-solid fa-check text-altrio-blue mr-2"></i>Opvolging van zorgpaden, parameters en leefstijl</li>
-              <li><i class="fa-solid fa-check text-altrio-blue mr-2"></i>Populatiemanagement en risicostratificatie</li>
-              <li><i class="fa-solid fa-check text-altrio-blue mr-2"></i>Preventie- en screeningcampagnes</li>
-            </ul>
-          </article>
+          <article class="bg-white p-7 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition"><div class="w-12 h-12 bg-orange-100 text-altrio-orange rounded-2xl flex items-center justify-center"><i class="fa-solid fa-stethoscope text-xl"></i></div><h3 class="mt-5 text-xl font-extrabold text-altrio-navy">In de praktijk</h3><p class="mt-3 text-sm text-altrio-muted leading-relaxed">Verpleegkundige zorg en organisatorische ondersteuning binnen de muren van uw huisartsenpraktijk.</p><ul class="mt-5 space-y-3 text-sm text-altrio-muted leading-relaxed"><li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Diabeteseducatie, leefstijladvies en zelfmanagement</li><li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Psychosociale screening bij zwangere vrouwen</li><li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Geplande bloed- en staalafnames</li><li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>ECG, spirometrie, parameters, vaccinaties en kleine verpleegkundige handelingen</li><li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Wondzorg, onthaal, basistriage, agendabeheer en EMD/Sumehr-ondersteuning</li></ul></article>
+          <article class="relative bg-white p-7 rounded-3xl border-2 border-altrio-orange shadow-xl"><span class="absolute -top-3.5 right-6 bg-altrio-orange text-white text-[9px] font-bold uppercase px-3 py-1 rounded-full tracking-widest">Zorg dichtbij</span><div class="w-12 h-12 bg-orange-100 text-altrio-orange rounded-2xl flex items-center justify-center"><i class="fa-solid fa-house-medical text-xl"></i></div><h3 class="mt-5 text-xl font-extrabold text-altrio-navy">Bij de patiënt thuis</h3><p class="mt-3 text-sm text-altrio-muted leading-relaxed">Outreachende zorg wanneer die beter aansluit bij de patiënt en het gekozen zorgpad.</p><ul class="mt-5 space-y-3 text-sm text-altrio-muted leading-relaxed"><li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Diabeteseducatie en psychosociale screening thuis</li><li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Mobiele bloedafnames in directe opdracht van de arts</li><li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Gespecialiseerde opvolging van complexe wonden</li><li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Totale parenterale nutritie en hoogtechnologische thuiszorg</li><li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Geriatrische assessments, advance care planning en casemanagement</li></ul></article>
+          <article class="bg-white p-7 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition"><div class="w-12 h-12 bg-blue-100 text-altrio-navy rounded-2xl flex items-center justify-center"><i class="fa-solid fa-laptop-medical text-xl"></i></div><h3 class="mt-5 text-xl font-extrabold text-altrio-navy">Op afstand &amp; proactief</h3><p class="mt-3 text-sm text-altrio-muted leading-relaxed">Structurele opvolging om zorgpaden te bewaken en risicopatiënten tijdig in beeld te krijgen.</p><ul class="mt-5 space-y-3 text-sm text-altrio-muted leading-relaxed"><li><i class="fa-solid fa-check text-altrio-blue mr-2"></i>Veilige triage op afstand en agendabeheer</li><li><i class="fa-solid fa-check text-altrio-blue mr-2"></i>Eventuele ondersteuning met AI-triagesoftware</li><li><i class="fa-solid fa-check text-altrio-blue mr-2"></i>Opvolging van zorgpaden, parameters en leefstijl</li><li><i class="fa-solid fa-check text-altrio-blue mr-2"></i>Populatiemanagement en risicostratificatie</li><li><i class="fa-solid fa-check text-altrio-blue mr-2"></i>Preventie- en screeningcampagnes</li></ul></article>
         </div>
+        <div class="mt-8 bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row gap-5 md:items-center md:justify-between"><div><h3 class="text-lg font-extrabold text-altrio-navy">Volledige menukaart</h3><p class="mt-2 text-sm text-altrio-muted">Vervang de voorbeeldlink in de code door de definitieve URL naar jullie uitgebreide menukaart, PDF of SharePoint-document.</p></div><a href="https://example.com/altrio-menukaart" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-altrio-navy text-white px-5 py-3 rounded-full text-sm font-bold hover:bg-blue-950 transition"><i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>Open volledige menukaart</a></div>
+      </div>
+    </section>
 
-        <div class="mt-8 bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row gap-5 md:items-center md:justify-between">
-          <div>
-            <h3 class="text-lg font-extrabold text-altrio-navy">Volledige menukaart</h3>
-            <p class="mt-2 text-sm text-altrio-muted">Vervang de voorbeeldlink in de code door de definitieve URL naar jullie uitgebreide menukaart, PDF of SharePoint-document.</p>
+    <section id="piloot" class="py-12 bg-emerald-50 border-y border-emerald-100"><div class="max-w-4xl mx-auto px-4"><div class="bg-white p-8 rounded-3xl border border-emerald-200 shadow-sm relative overflow-hidden"><div class="absolute top-0 right-0 bg-emerald-600 text-white text-[10px] font-bold uppercase px-4 py-1.5 rounded-bl-2xl">Kennismakingsaanbod · max. 2 maanden</div><div class="flex items-start gap-4"><div class="shrink-0 p-3 bg-emerald-100 text-emerald-800 rounded-2xl"><i class="fa-solid fa-rocket text-2xl"></i></div><div><h2 class="text-2xl font-extrabold text-altrio-navy">Eens proberen?</h2><p class="mt-3 text-sm text-altrio-muted leading-relaxed">Start met een risicoloos pilootproject van maximaal twee maanden en maak laagdrempelig kennis met verpleegkundige ondersteuning binnen de dynamiek van uw praktijk.</p><div class="mt-5 grid md:grid-cols-2 gap-3 text-sm text-altrio-muted"><p><i class="fa-solid fa-check text-emerald-600 mr-2"></i>Eén dagdeel per maand in de praktijk</p><p><i class="fa-solid fa-check text-emerald-600 mr-2"></i>Directe nomenclatuurfacturatie aan het ziekenfonds</p><p><i class="fa-solid fa-check text-emerald-600 mr-2"></i>Geen brutokost of risico voor de praktijk</p><p><i class="fa-solid fa-check text-emerald-600 mr-2"></i>Concrete kennismaking met de Altrio-werkwijze</p></div><a href="#calculator" class="mt-6 inline-block bg-emerald-600 text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-emerald-700 transition">Activeer pilootmodus in de simulator</a></div></div></div></div></section>
+
+    <section id="tarieven" class="py-16 bg-slate-50"><div class="max-w-6xl mx-auto px-4"><div class="text-center max-w-2xl mx-auto mb-12"><h2 class="text-3xl font-extrabold text-altrio-navy">Onze formules</h2><p class="text-altrio-muted mt-3">Kies de intensiteit van ondersteuning die past bij uw praktijk en uw gekozen zorgaanbod.</p></div><div class="grid lg:grid-cols-3 gap-8 items-stretch"><article class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm"><div class="flex justify-between items-center"><span class="bg-slate-100 text-slate-800 text-[10px] font-bold uppercase px-2.5 py-1 rounded">Basis</span><span class="text-sm font-extrabold text-slate-500">Ad hoc</span></div><h3 class="mt-6 text-2xl font-bold text-altrio-navy">Ondersteuning</h3><p class="mt-3 text-sm text-altrio-muted">Gerichte klinische ondersteuning voor specifieke taken uit de menukaart.</p><ul class="mt-6 space-y-3 text-sm text-altrio-muted"><li><i class="fa-solid fa-check text-green-500 mr-2"></i>Tot maximaal 10 uur per week</li><li><i class="fa-solid fa-check text-green-500 mr-2"></i>Tarief: € 60 per uur, BTW-vrij</li><li><i class="fa-solid fa-check text-green-500 mr-2"></i>Toegang tot de online Altrio-premietool</li></ul></article><article class="relative bg-white p-8 rounded-3xl border-2 border-altrio-orange shadow-xl"><span class="absolute -top-3.5 right-6 bg-altrio-orange text-white text-[9px] font-bold uppercase px-3 py-1 rounded-full tracking-widest">Aanbevolen</span><div class="flex justify-between items-center"><span class="bg-orange-100 text-altrio-orange text-[10px] font-bold uppercase px-2.5 py-1 rounded">Premium</span><span class="text-sm font-extrabold text-altrio-orange">Vaste pakketten</span></div><h3 class="mt-6 text-2xl font-bold text-altrio-navy">Community Partner</h3><p class="mt-3 text-sm text-altrio-muted">Vaste, wekelijkse inzet met praktijkgerichte ondersteuning en actieve premieondersteuning.</p><ul class="mt-6 space-y-3 text-sm text-altrio-muted"><li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>15, 20 of 32 uur per week</li><li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Jaarforfait op IFIC-basis met overhead</li><li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>EMD-screening voor proactieve opvolging</li><li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Actieve premie support en aanvraagservice</li></ul></article><article class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm"><div class="flex justify-between items-center"><span class="bg-blue-100 text-altrio-navy text-[10px] font-bold uppercase px-2.5 py-1 rounded">Premium Plus</span><span class="text-sm font-extrabold text-altrio-navy">All-in</span></div><h3 class="mt-6 text-2xl font-bold text-altrio-navy">All-in groei</h3><p class="mt-3 text-sm text-altrio-muted">Alle voordelen van Premium, aangevuld met digitale zichtbaarheid en actieve preventiecampagnes.</p><ul class="mt-6 space-y-3 text-sm text-altrio-muted"><li><i class="fa-solid fa-check text-altrio-blue mr-2"></i>Premiumtarief + 15%</li><li><i class="fa-solid fa-check text-altrio-blue mr-2"></i>Websitebeheer en updates</li><li><i class="fa-solid fa-check text-altrio-blue mr-2"></i>Populatiemanagement en preventieondersteuning</li></ul></article></div></div></section>
+
+    <section id="calculator" class="relative overflow-hidden py-16 bg-altrio-navy text-white">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-altrio-orange/15 via-transparent to-transparent"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-12"><span class="inline-block bg-altrio-orange text-white text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-2">Scenario simulator</span><h2 class="text-3xl sm:text-4xl font-extrabold">Bereken de winst van rust en tijdwinst</h2><p class="text-slate-300 mt-4">Kies een consultatiewaarde. Diezelfde waarde geldt zowel voor de klinische tijdwinst als voor de administratieve tijdwinst.</p></div>
+        <div class="grid lg:grid-cols-12 gap-8 items-start">
+          <div class="lg:col-span-5 bg-white text-altrio-dark p-6 rounded-3xl shadow-xl space-y-6">
+            <h3 class="text-lg font-bold text-altrio-navy border-b border-slate-100 pb-3"><i class="fa-solid fa-gears text-altrio-orange mr-2"></i>Praktijkparameters</h3>
+            <label class="p-4 bg-emerald-50 rounded-2xl flex items-center justify-between border border-emerald-200 cursor-pointer"><span><span class="block text-sm font-bold text-emerald-800">Gratis pilootmodus</span><span class="text-xs text-emerald-700">Eén dagdeel per maand, zonder brutokost.</span></span><input id="pilot" type="checkbox" class="w-5 h-5 accent-emerald-600"></label>
+            <label class="block"><span class="block text-sm font-bold text-altrio-navy">Kies uw Altrio-formule</span><select id="tier" class="mt-2 w-full bg-slate-50 border border-slate-200 text-sm rounded-lg p-2.5 text-altrio-navy font-medium"><option value="basis">Basis</option><option value="premium" selected>Premium</option><option value="plus">Premium Plus</option></select></label>
+            <div><div class="flex justify-between text-sm font-bold text-altrio-navy"><span>Wekelijkse uren verpleegkundige</span><span id="hoursLabel" class="text-altrio-orange">15 uur</span></div><input id="hours" type="range" min="1" max="32" value="15" class="mt-2 w-full accent-altrio-orange"><p class="mt-1 text-xs text-altrio-muted">Basis: uurtarief. Premium en Premium Plus: forfaitaire indicatie.</p></div>
+            <div class="grid grid-cols-2 gap-4"><div><div class="flex justify-between text-sm font-bold text-altrio-navy"><span>Huisartsen</span><span id="artsenLabel" class="text-altrio-orange">5</span></div><input id="artsen" type="range" min="1" max="10" value="5" class="mt-2 w-full accent-altrio-orange"></div><div><div class="flex justify-between text-sm font-bold text-altrio-navy"><span>HAIO's</span><span id="haiosLabel" class="text-altrio-orange">1</span></div><input id="haios" type="range" min="0" max="5" value="1" class="mt-2 w-full accent-altrio-orange"></div></div>
+            <div><div class="flex justify-between text-sm font-bold text-altrio-navy"><span>Admin-uren gewonnen per arts/week</span><span id="adminHoursLabel" class="text-altrio-orange">2 uur</span></div><input id="adminHours" type="range" min="0" max="10" step="0.5" value="2" class="mt-2 w-full accent-altrio-orange"><p class="mt-1 text-xs text-altrio-muted">Deze uren worden gewaardeerd aan dezelfde consultatiewaarde die u hieronder kiest.</p></div>
+            <div class="grid grid-cols-2 gap-4"><label class="block"><span class="block text-sm font-bold text-altrio-navy">Consultatiewaarde</span><select id="hourValue" class="mt-2 w-full bg-slate-50 border border-slate-200 text-sm rounded-lg p-2.5"><option value="100">€ 100/u</option><option value="120" selected>€ 120/u</option><option value="150">€ 150/u</option></select><span class="mt-1 block text-xs text-altrio-muted">Geldt voor klinische én administratieve tijdwinst.</span></label><label class="block"><span class="block text-sm font-bold text-altrio-navy">Klinische tijdwinst</span><select id="timeGain" class="mt-2 w-full bg-slate-50 border border-slate-200 text-sm rounded-lg p-2.5"><option value="0">0%</option><option value="25" selected>25%</option><option value="50">50%</option><option value="100">100%</option></select></label></div>
           </div>
-          <a href="https://example.com/altrio-menukaart" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-altrio-navy text-white px-5 py-3 rounded-full text-sm font-bold hover:bg-blue-950 transition"><i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>Open volledige menukaart</a>
+          <div class="lg:col-span-7 bg-white/5 border border-white/10 p-8 rounded-3xl shadow-xl">
+            <h3 class="text-xl font-bold border-b border-white/10 pb-4"><i class="fa-solid fa-chart-pie text-altrio-blue mr-2"></i>Financiële berekening (jaarlijks)</h3>
+            <div class="space-y-4 text-sm mt-6"><div class="flex justify-between gap-4 text-slate-300"><span>Bruto investering Altrio-verpleegkundige</span><span id="outCost" class="font-bold text-red-400">€ 0,00</span></div><div class="flex justify-between gap-4 pb-4 border-b border-white/10 text-slate-300"><span>Indicatieve tegemoetkoming zorgcontinuïteit</span><span id="outPremie" class="font-bold text-altrio-blue">€ 0,00</span></div><div class="flex justify-between gap-4 pb-4 border-b border-white/10 text-slate-300"><span>Klinische extra omzet uit tijdwinst</span><span id="outClinical" class="font-bold text-green-400">€ 0,00</span></div><div class="flex justify-between gap-4 pb-4 border-b border-white/10 text-slate-300"><span>Waarde administratieve tijdwinst (<span id="adminRateLabel">€ 120/u</span>)</span><span id="outAdmin" class="font-bold text-green-400">€ 0,00</span></div><div class="p-6 bg-white/5 rounded-2xl border border-white/15 flex flex-col sm:flex-row gap-4 justify-between items-center"><div class="text-center sm:text-left"><span class="block text-xs uppercase tracking-wider text-slate-400 font-bold">Uw netto eindresultaat</span><span class="text-xs text-slate-300">Indicatief: opbrengsten en tijdwinst minus investering.</span></div><span id="outNet" class="text-3xl font-black text-green-400">€ 0,00</span></div></div>
+            <p class="mt-6 text-xs text-slate-400 leading-relaxed">De simulator is indicatief. Controleer vóór een beslissing de actuele voorwaarden, barema's, premies, nomenclatuur, contractuele afspraken en fiscale behandeling.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Pilootproject -->
-    <section id="piloot" class="py-12 bg-emerald-50 border-y border-emerald-100">
+    <section id="premieoverzicht" class="py-16 bg-white"><div class="max-w-6xl mx-auto px-4"><div class="text-center max-w-3xl mx-auto mb-12"><span class="inline-block bg-altrio-navy text-white text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-2">Overzicht</span><h2 class="text-3xl font-extrabold text-altrio-navy">Premies en subsidies</h2><p class="text-altrio-muted mt-3">Een beknopt overzicht van mogelijke hefbomen voor huisartsenzorg. Laat de actuele voorwaarden steeds verifiëren.</p></div><div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto"><article class="bg-altrio-light p-6 rounded-2xl border border-slate-100"><h3 class="text-lg font-bold text-altrio-navy border-b border-slate-200 pb-2"><i class="fa-solid fa-hospital text-altrio-blue mr-2"></i>RIZIV</h3><ul class="mt-5 space-y-3 text-sm text-altrio-muted"><li>Geïntegreerde praktijkpremie</li><li>GMD-starterspremie</li><li>Tegemoetkoming zorgcontinuïteit</li><li>Sociaal statuut voor geconventioneerde artsen</li><li>Accrediteringshonorarium</li></ul></article><article class="bg-altrio-light p-6 rounded-2xl border border-slate-100"><h3 class="text-lg font-bold text-altrio-navy border-b border-slate-200 pb-2"><i class="fa-solid fa-building-columns text-altrio-orange mr-2"></i>Vlaanderen en Impulseo</h3><ul class="mt-5 space-y-3 text-sm text-altrio-muted"><li>Renteloze lening voor eerste installatie of uitbouw</li><li>Mogelijke infrastructuurondersteuning</li><li>Loonkostenondersteuning voor loondienstpersoneel</li><li>Tegemoetkoming voor medisch telesecretariaat</li></ul></article></div></div></section>
+  </main>
+
+  <footer class="bg-altrio-navy text-slate-400 py-12 text-xs"><div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-5"><div class="text-center md:text-left"><span class="text-base font-extrabold text-white block">altrio</span><span class="text-[10px] uppercase tracking-widest text-altrio-orange font-bold">Partner in praktijkontwikkeling</span></div><p class="text-center md:text-right">© 2026 Altrio Thuisverpleging. Alle rechten voorbehouden.</p></div></footer>
+
+  <script>
+    const euro = value => new Intl.NumberFormat('nl-BE', { style: 'currency', currency: 'EUR' }).format(value);
+    const ui = {
+      pilot: document.getElementById('pilot'),
+      tier: document.getElementById('tier'),
+      hours: document.getElementById('hours'),
+      artsen: document.getElementById('artsen'),
+      haios: document.getElementById('haios'),
+      adminHours: document.getElementById('adminHours'),
+      hourValue: document.getElementById('hourValue'),
+      timeGain: document.getElementById('timeGain'),
+      hoursLabel: document.getElementById('hoursLabel'),
+      artsenLabel: document.getElementById('artsenLabel'),
+      haiosLabel: document.getElementById('haiosLabel'),
+      adminHoursLabel: document.getElementById('adminHoursLabel'),
+      adminRateLabel: document.getElementById('adminRateLabel'),
+      outCost: document.getElementById('outCost'),
+      outPremie: document.getElementById('outPremie'),
+      outClinical: document.getElementById('outClinical'),
+      outAdmin: document.getElementById('outAdmin'),
+      outNet: document.getElementById('outNet')
+    };
+
+    function getContinuityPremium(hours) {
+      if (hours < 6) return 0;
+      if (hours <= 12) return 3000;
+      if (hours <= 19) return 7500;
+      if (hours <= 38) return 13640;
+      if (hours <= 57) return 14597;
+      return 15554;
+    }
+
+    function getNurseCost(tier, hours) {
+      if (tier === 'basis') return hours * 60 * 48;
+      const baseForfait = hours <= 15 ? 32804 : hours <= 20 ? 43739 : 69983;
+      const withOverhead = baseForfait * 1.15;
+      return tier === 'plus' ? withOverhead * 1.15 : withOverhead;
+    }
+
+    function recalculate() {
+      const isPilot = ui.pilot.checked;
+      const tier = ui.tier.value;
+      const configuredHours = Number(ui.hours.value);
+      const hours = isPilot ? 1 : configuredHours;
+      const artsen = Number(ui.artsen.value);
+      const haios = Number(ui.haios.value);
+      const adminHours = Number(ui.adminHours.value);
+      const consultValue = Number(ui.hourValue.value);
+      const timeGain = Number(ui.timeGain.value) / 100;
+
+      ui.hoursLabel.textContent = isPilot ? 'Pilootmodus' : `${hours} uur`;
+      ui.artsenLabel.textContent = artsen;
+      ui.haiosLabel.textContent = haios;
+      ui.adminHoursLabel.textContent = `${adminHours} uur`;
+      ui.adminRateLabel.textContent = `${euro(consultValue)}/u`;
+
+      const nurseCost = isPilot ? 0 : getNurseCost(tier, hours);
+      const continuityPremium = isPilot ? 0 : getContinuityPremium(hours);
+      const clinicalValue = isPilot ? 0 : hours * timeGain * consultValue * 48;
+      const medicalCapacity = artsen + (haios * 0.5);
+      const administrativeValue = adminHours * medicalCapacity * consultValue * 48;
+      const netResult = continuityPremium + clinicalValue + administrativeValue - nurseCost;
+
+      ui.outCost.textContent = `− ${euro(nurseCost)}`;
+      ui.outPremie.textContent = `+ ${euro(continuityPremium)}`;
+      ui.outClinical.textContent = `+ ${euro(clinicalValue)}`;
+      ui.outAdmin.textContent = `+ ${euro(administrativeValue)}`;
+      ui.outNet.textContent = `${netResult >= 0 ? '+ ' : ''}${euro(netResult)}`;
+      ui.outNet.className = `text-3xl font-black ${netResult >= 0 ? 'text-green-400' : 'text-red-400'}`;
+    }
+
+    [ui.pilot, ui.tier, ui.hours, ui.artsen, ui.haios, ui.adminHours, ui.hourValue, ui.timeGain].forEach(element => {
+      element.addEventListener('input', recalculate);
+      element.addEventListener('change', recalculate);
+    });
+
+    recalculate();
+  </script>
+</body>
+</html>
