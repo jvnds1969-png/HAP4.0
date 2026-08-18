@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Altrio ondersteunt huisartsenpraktijken met verpleegkundige zorg, praktijkorganisatie en proactieve populatiezorg.">
+  <meta name="description" content="Altrio ondersteunt huisartsenpraktijken met verpleegkundige zorg, praktijkorganisatie en proactieve zorgpaden.">
   <title>Altrio — Partner in Praktijkontwikkeling</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -23,119 +23,124 @@
           }
         }
       }
-    }
+    };
   </script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
-    .menu-card li { position: relative; padding-left: 1.35rem; }
-    .menu-card li::before { content: '✓'; position: absolute; left: 0; color: #e05326; font-weight: 800; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
   </style>
 </head>
 <body class="bg-altrio-light text-altrio-dark antialiased">
 
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-100 shadow-sm">
-    <div class="max-w-7xl mx-auto h-20 px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
-      <a href="#visie" class="flex items-center gap-3" aria-label="Altrio startpagina">
-        <div class="w-10 h-10 bg-altrio-navy rounded-lg flex items-center justify-center text-white font-extrabold text-xl">A</div>
-        <div>
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      <a href="#visie" class="flex items-center gap-3" aria-label="Naar startpagina">
+        <span class="w-10 h-10 bg-altrio-navy rounded-lg flex items-center justify-center text-white font-extrabold text-xl">A</span>
+        <span>
           <span class="block text-xl font-extrabold tracking-tight text-altrio-navy">altrio</span>
           <span class="block -mt-1 text-[10px] uppercase tracking-widest text-altrio-orange font-bold">praktijkontwikkeling</span>
-        </div>
+        </span>
       </a>
 
       <nav class="hidden xl:flex items-center gap-6 text-sm font-semibold text-altrio-navy" aria-label="Hoofdnavigatie">
         <a href="#visie" class="hover:text-altrio-orange transition">Onze belofte</a>
         <a href="#menukaart" class="hover:text-altrio-orange transition">Menukaart</a>
         <a href="#piloot" class="hover:text-altrio-orange transition">Pilootproject</a>
-        <a href="#formules" class="hover:text-altrio-orange transition">Formules</a>
+        <a href="#tarieven" class="hover:text-altrio-orange transition">Formules</a>
+        <a href="#premieoverzicht" class="hover:text-altrio-orange transition">Premies</a>
         <a href="#calculator" class="hover:text-altrio-orange transition">Simulator</a>
-        <a href="#premies" class="hover:text-altrio-orange transition">Premies</a>
       </nav>
 
-      <a href="#calculator" class="shrink-0 bg-altrio-orange text-white px-4 sm:px-6 py-2.5 rounded-full text-sm font-bold shadow-md hover:bg-orange-700 hover:shadow-lg transition">Bereken uw voordeel</a>
+      <a href="#calculator" class="shrink-0 bg-altrio-orange text-white px-4 sm:px-6 py-2.5 rounded-full text-sm font-bold shadow-md hover:bg-orange-700 hover:shadow-lg transition">
+        Bereken uw voordeel
+      </a>
     </div>
   </header>
 
   <main>
-    <section id="visie" class="relative overflow-hidden bg-altrio-navy text-white py-16 lg:py-24">
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-altrio-blue/25 via-transparent to-transparent"></div>
-      <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
+    <!-- Hero -->
+    <section id="visie" class="relative overflow-hidden bg-altrio-navy text-white py-16 lg:py-20">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-altrio-blue/20 via-transparent to-transparent"></div>
+      <div class="relative z-10 max-w-5xl mx-auto px-4 text-center space-y-7">
         <span class="inline-block bg-altrio-orange px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">Onze belofte</span>
-        <h1 class="mt-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">Wij creëren <span class="text-altrio-blue">rust en ruimte</span> in uw huisartsenpraktijk.</h1>
-        <p class="mt-6 max-w-3xl mx-auto text-lg leading-relaxed text-slate-300">Altrio neemt preventieve en chronische zorgtrajecten, praktijkondersteuning en proactieve opvolging mee op. Zo houdt uw team tijd vrij voor complexe medische dossiers en kwaliteitsvolle patiëntenzorg.</p>
-        <div class="mt-8 flex flex-col sm:flex-row justify-center gap-3">
-          <a href="#menukaart" class="inline-flex items-center justify-center gap-2 bg-altrio-orange px-6 py-3 rounded-full font-bold text-sm hover:bg-orange-700 transition"><i class="fa-solid fa-list-check"></i> Bekijk de menukaart</a>
-          <a href="#piloot" class="inline-flex items-center justify-center gap-2 border border-white/30 px-6 py-3 rounded-full font-bold text-sm hover:bg-white/10 transition"><i class="fa-solid fa-rocket"></i> Ontdek het pilootproject</a>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+          Wij creëren <span class="text-altrio-blue">rust en ruimte</span> in uw huisartsenpraktijk
+        </h1>
+        <p class="max-w-3xl mx-auto text-lg text-slate-300 leading-relaxed">
+          Door preventieve en chronische zorgtrajecten structureel over te dragen aan de verpleegkundigen van Altrio, ontzorgen wij uw praktijk op een veilige, multidisciplinaire en financieel gezonde manier.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-3">
+          <a href="#menukaart" class="bg-altrio-orange text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-orange-700 transition"><i class="fa-solid fa-list-check mr-2"></i>Bekijk de menukaart</a>
+          <a href="#piloot" class="border border-white/30 text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-white/10 transition"><i class="fa-solid fa-rocket mr-2"></i>Start met een piloot</a>
         </div>
       </div>
     </section>
 
-    <section id="menukaart" class="py-16 lg:py-20 bg-white">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <div class="max-w-3xl mx-auto text-center">
-          <span class="inline-block bg-altrio-navy text-white text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full">Dienstenaanbod</span>
-          <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold text-altrio-navy">De Altrio-menukaart</h2>
-          <p class="mt-4 text-altrio-muted leading-relaxed">Kies één concrete bouwsteen of combineer ondersteuning tot een geïntegreerde praktijkwerking. Onze verpleegkundigen werken in de praktijk, bij de patiënt thuis en op afstand.</p>
+    <!-- Menukaart -->
+    <section id="menukaart" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="inline-block bg-altrio-navy text-white text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-3">Dienstenaanbod</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-altrio-navy">De Altrio-menukaart</h2>
+          <p class="text-altrio-muted mt-3 leading-relaxed">Start klein met één concrete ondersteuning, of combineer diensten tot een geïntegreerde praktijkwerking. Altrio werkt in de praktijk, bij de patiënt thuis en op afstand.</p>
         </div>
 
-        <div class="mt-12 grid lg:grid-cols-3 gap-7">
-          <article class="menu-card rounded-3xl border border-slate-200 p-7 bg-white shadow-sm hover:shadow-md transition">
-            <div class="w-12 h-12 rounded-2xl bg-orange-100 text-altrio-orange flex items-center justify-center"><i class="fa-solid fa-stethoscope text-xl"></i></div>
+        <div class="grid lg:grid-cols-3 gap-8">
+          <article class="bg-white p-7 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
+            <div class="w-12 h-12 bg-orange-100 text-altrio-orange rounded-2xl flex items-center justify-center"><i class="fa-solid fa-stethoscope text-xl"></i></div>
             <h3 class="mt-5 text-xl font-extrabold text-altrio-navy">In de praktijk</h3>
-            <p class="mt-3 text-sm leading-relaxed text-altrio-muted">Verpleegkundige zorg en praktijkondersteuning op een vast of flexibel moment in uw huisartsenpraktijk.</p>
-            <ul class="mt-5 space-y-3 text-sm leading-relaxed text-altrio-muted">
-              <li>Diabeteseducatie, leefstijladvies en zelfmanagement binnen opstart- of zorgtrajecten</li>
-              <li>Psychosociale screening bij zwangere vrouwen via Born in Belgium Professionals</li>
-              <li>Geplande bloed- en staalafnames</li>
-              <li>ECG, spirometrie, preoperatief onderzoek, parameters en vaccinaties</li>
-              <li>Wondzorg, onthaal, basistriage, agendabeheer en EMD/Sumehr-voorbereiding</li>
+            <p class="mt-3 text-sm text-altrio-muted leading-relaxed">Verpleegkundige zorg en organisatorische ondersteuning binnen de muren van uw huisartsenpraktijk.</p>
+            <ul class="mt-5 space-y-3 text-sm text-altrio-muted leading-relaxed">
+              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Diabeteseducatie, leefstijladvies en zelfmanagement</li>
+              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Psychosociale screening bij zwangere vrouwen</li>
+              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Geplande bloed- en staalafnames</li>
+              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>ECG, spirometrie, parameters, vaccinaties en kleine verpleegkundige handelingen</li>
+              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Wondzorg, onthaal, basistriage, agendabeheer en EMD/Sumehr-ondersteuning</li>
             </ul>
           </article>
 
-          <article class="menu-card rounded-3xl border-2 border-altrio-orange p-7 bg-white shadow-lg relative">
-            <span class="absolute -top-3 right-6 bg-altrio-orange text-white text-[10px] uppercase tracking-wider font-bold px-3 py-1 rounded-full">Zorg dichtbij</span>
-            <div class="w-12 h-12 rounded-2xl bg-orange-100 text-altrio-orange flex items-center justify-center"><i class="fa-solid fa-house-medical text-xl"></i></div>
+          <article class="relative bg-white p-7 rounded-3xl border-2 border-altrio-orange shadow-xl">
+            <span class="absolute -top-3.5 right-6 bg-altrio-orange text-white text-[9px] font-bold uppercase px-3 py-1 rounded-full tracking-widest">Zorg dichtbij</span>
+            <div class="w-12 h-12 bg-orange-100 text-altrio-orange rounded-2xl flex items-center justify-center"><i class="fa-solid fa-house-medical text-xl"></i></div>
             <h3 class="mt-5 text-xl font-extrabold text-altrio-navy">Bij de patiënt thuis</h3>
-            <p class="mt-3 text-sm leading-relaxed text-altrio-muted">Wanneer thuis of outreachend werken beter aansluit bij de zorgvraag, organiseren we de opvolging buiten de praktijkmuren.</p>
-            <ul class="mt-5 space-y-3 text-sm leading-relaxed text-altrio-muted">
-              <li>Diabeteseducatie en psychosociale screening in de thuissituatie</li>
-              <li>Mobiele bloedafnames in directe opdracht van de arts</li>
-              <li>Gespecialiseerde opvolging van complexe wonden</li>
-              <li>Totale parenterale nutritie en hoogtechnologische, ziekenhuisvervangende thuiszorg</li>
-              <li>Geriatrische assessments, advance care planning en casemanagement</li>
+            <p class="mt-3 text-sm text-altrio-muted leading-relaxed">Outreachende zorg wanneer die beter aansluit bij de patiënt en het gekozen zorgpad.</p>
+            <ul class="mt-5 space-y-3 text-sm text-altrio-muted leading-relaxed">
+              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Diabeteseducatie en psychosociale screening thuis</li>
+              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Mobiele bloedafnames in directe opdracht van de arts</li>
+              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Gespecialiseerde opvolging van complexe wonden</li>
+              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Totale parenterale nutritie en hoogtechnologische thuiszorg</li>
+              <li><i class="fa-solid fa-check text-altrio-orange mr-2"></i>Geriatrische assessments, advance care planning en casemanagement</li>
             </ul>
           </article>
 
-          <article class="menu-card rounded-3xl border border-slate-200 p-7 bg-white shadow-sm hover:shadow-md transition">
-            <div class="w-12 h-12 rounded-2xl bg-blue-100 text-altrio-navy flex items-center justify-center"><i class="fa-solid fa-laptop-medical text-xl"></i></div>
+          <article class="bg-white p-7 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition">
+            <div class="w-12 h-12 bg-blue-100 text-altrio-navy rounded-2xl flex items-center justify-center"><i class="fa-solid fa-laptop-medical text-xl"></i></div>
             <h3 class="mt-5 text-xl font-extrabold text-altrio-navy">Op afstand &amp; proactief</h3>
-            <p class="mt-3 text-sm leading-relaxed text-altrio-muted">We helpen uw praktijk zorgpaden structureel op te volgen en risicopatiënten tijdig in beeld te brengen.</p>
-            <ul class="mt-5 space-y-3 text-sm leading-relaxed text-altrio-muted">
-              <li>Veilige triage op afstand en agendabeheer, eventueel ondersteund door AI-triagesoftware</li>
-              <li>Opvolging van zorgpaden, parameters en leefstijl</li>
-              <li>Populatiemanagement en risicostratificatie</li>
-              <li>Preventie- en screeningcampagnes</li>
-              <li>Autonome protocollaire consultvoering en praktijkgerichte procesondersteuning</li>
+            <p class="mt-3 text-sm text-altrio-muted leading-relaxed">Structurele opvolging om zorgpaden te bewaken en risicopatiënten tijdig in beeld te krijgen.</p>
+            <ul class="mt-5 space-y-3 text-sm text-altrio-muted leading-relaxed">
+              <li><i class="fa-solid fa-check text-altrio-blue mr-2"></i>Veilige triage op afstand en agendabeheer</li>
+              <li><i class="fa-solid fa-check text-altrio-blue mr-2"></i>Eventuele ondersteuning met AI-triagesoftware</li>
+              <li><i class="fa-solid fa-check text-altrio-blue mr-2"></i>Opvolging van zorgpaden, parameters en leefstijl</li>
+              <li><i class="fa-solid fa-check text-altrio-blue mr-2"></i>Populatiemanagement en risicostratificatie</li>
+              <li><i class="fa-solid fa-check text-altrio-blue mr-2"></i>Preventie- en screeningcampagnes</li>
             </ul>
           </article>
         </div>
 
-        <div class="mt-8 rounded-3xl border border-slate-200 bg-altrio-light p-6 sm:p-8 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
+        <div class="mt-8 bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row gap-5 md:items-center md:justify-between">
           <div>
-            <h3 class="text-lg font-extrabold text-altrio-navy">Volledige menukaart raadplegen</h3>
-            <p class="mt-2 text-sm text-altrio-muted">De geïntegreerde menukaart hierboven geeft het overzicht. Voor een afzonderlijk document of detailpagina kunt u deze knop koppelen aan uw definitieve publieke URL.</p>
+            <h3 class="text-lg font-extrabold text-altrio-navy">Volledige menukaart</h3>
+            <p class="mt-2 text-sm text-altrio-muted">Vervang de voorbeeldlink in de code door de definitieve URL naar jullie uitgebreide menukaart, PDF of SharePoint-document.</p>
           </div>
-          <!-- VERVANG de href hieronder door de definitieve URL naar jullie PDF, webpagina of SharePoint-document. -->
-          <a href="https://example.com/altrio-menukaart" target="_blank" rel="noopener noreferrer" class="shrink-0 inline-flex items-center gap-2 bg-altrio-navy text-white px-5 py-3 rounded-full text-sm font-bold hover:bg-blue-950 transition"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open volledige menukaart</a>
+          <a href="https://example.com/altrio-menukaart" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-altrio-navy text-white px-5 py-3 rounded-full text-sm font-bold hover:bg-blue-950 transition"><i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>Open volledige menukaart</a>
         </div>
       </div>
     </section>
 
+    <!-- Pilootproject -->
     <section id="piloot" class="py-12 bg-emerald-50 border-y border-emerald-100">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6">
-        <div class="relative overflow-hidden rounded-3xl border border-emerald-200 bg-white p-8 shadow-sm">
-          <span class="absolute top-0 right-0 bg-emerald-600 text-white text-[10px] font-bold uppercase p
